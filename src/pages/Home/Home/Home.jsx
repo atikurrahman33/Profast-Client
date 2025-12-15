@@ -1,9 +1,14 @@
+import Banner from "../Banner/Banner";
+import HowWork from "../HowWork/HowWork";
+
 
 
 const Home = () => {
     return (
         <div className="">
-            <p className="font-bold text-red-500 text-3xl ">This is Home</p>
+            <Banner />
+            <HowWork />
+            
         </div>
     );
 };
