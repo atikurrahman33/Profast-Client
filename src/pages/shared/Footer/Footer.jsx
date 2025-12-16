@@ -1,45 +1,43 @@
 import ProfastLogo from "../ProfastLogo/ProfastLogo";
-import { FaLinkedin } from "react-icons/fa6";
-import { FaFacebook } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
-
-
+import { FaLinkedin, FaFacebook, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
-    return (
-        <div>
-            <footer className="footer footer-horizontal footer-center bg-neutral text-neutral-content p-10">
-                <aside>
-                   <ProfastLogo />
-                    <p className=" text-lg">
-                        Enjoy fast, reliable parcel delivery with real-time tracking and zero hassle. From personal packages to <br />
-                        business shipments — we deliver on time, every time.
-                    </p>
-                   <div className="text-lg flex justify-center gap-6 mt-8">
-                    <p>Services</p>
-                    <p>Coverage</p>
-                    <p>About Us</p>
-                    <p>Pricing</p>
-                    <p>Blog</p>
-                    <p>Contact</p>
-                   </div>
-                </aside>
-                <nav>
-                    <div className="">
-                        <div className="flex justify-center gap-4"> 
-                            <FaLinkedin className="w-8 h-8 "/>
-                            <FaFacebook className="w-8 h-8" />
-                            <FaTwitter className="w-8 h-8" />
-                            <FaYoutube className="w-8 h-8" />
-                        </div>
-                       
+  return (
+    <footer className="bg-neutral text-neutral-content px-6 py-12">
+      <div className="max-w-7xl mx-auto flex flex-col items-center text-center gap-10">
 
-                    </div>
-                </nav>
-            </footer>
-        </div>
-    );
+        {/* Logo & Description */}
+        <aside className="flex flex-col items-center gap-4">
+          <ProfastLogo />
+          <p className="text-base sm:text-lg max-w-3xl">
+            Enjoy fast, reliable parcel delivery with real-time tracking and zero hassle.
+            From personal packages to business shipments — we deliver on time, every time.
+          </p>
+
+          {/* Footer Links */}
+          <div className="flex flex-wrap justify-center gap-6 text-sm sm:text-base mt-4">
+            <p className="cursor-pointer hover:text-primary">Services</p>
+            <p className="cursor-pointer hover:text-primary">Coverage</p>
+            <p className="cursor-pointer hover:text-primary">About Us</p>
+            <p className="cursor-pointer hover:text-primary">Pricing</p>
+            <p className="cursor-pointer hover:text-primary">Blog</p>
+            <p className="cursor-pointer hover:text-primary">Contact</p>
+          </div>
+        </aside>
+
+        {/* Social Icons */}
+        <nav>
+          <div className="flex justify-center gap-6">
+            <FaLinkedin className="w-7 h-7 hover:text-primary cursor-pointer" />
+            <FaFacebook className="w-7 h-7 hover:text-primary cursor-pointer" />
+            <FaTwitter className="w-7 h-7 hover:text-primary cursor-pointer" />
+            <FaYoutube className="w-7 h-7 hover:text-primary cursor-pointer" />
+          </div>
+        </nav>
+
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;
