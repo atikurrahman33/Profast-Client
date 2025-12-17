@@ -4,6 +4,8 @@ import ExtraIntroduce from "../ExtraIntroduce/ExtraIntroduce";
 import HowWork from "../HowWork/HowWork";
 import Service from "../Service/Service";
 import Merchant from "../Merchant/Merchant";
+import Faq from "../Faqs/Faq";
+import ReviewCarousel from "../ReviewCarousel/ReviewCarousel";
 
 
 
@@ -16,6 +18,8 @@ const Home = () => {
             <ClientLogos />
             <ExtraIntroduce />
             <Merchant/>
+            <ReviewCarousel/>
+            <Faq/>
             
         </div>
     );

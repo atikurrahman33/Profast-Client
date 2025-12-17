@@ -3,7 +3,7 @@
 const Merchant = () => {
     return (
         <div className="mb-8">
-            <div className="hero bg-[#33929D] p-16 rounded-lg">
+            <div data-aos="zoom-in" className=" hero bg-[url('assets/be-a-merchant-bg.png')] bg-[#33929D] p-16 rounded-lg">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <img className="h-60"
                         src="/src/assets/Screenshot 2025-12-16 224154.png"
